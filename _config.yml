@@ -1,0 +1,10 @@
+# Configuration. 
+# ~~~
+
+# Generation du site à la volée. 
+auto: true
+
+# On ne compile pas le dossier less
+exclude: less
+
+paginate: 5

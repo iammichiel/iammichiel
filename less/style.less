@@ -1,0 +1,264 @@
+/* ==|== Import HTML5 ✰ Boilerplate LESS library =========================== */
+@import 'boilerplate.less';
+@import 'prettify.less';
+
+/* Normalize */
+#blr.normalize(black, white);
+
+/* ==|== primary styles =====================================================
+   Author:
+  ========================================================================== */
+
+@font-face {
+    font-family: 'GeosansLightRegular';
+    src: url('/font/geosanslight-webfont.eot');
+    src: url('/font/geosanslight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/font/geosanslight-webfont.woff') format('woff'),
+         url('/font/geosanslight-webfont.ttf') format('truetype'),
+         url('/font/geosanslight-webfont.svg#GeosansLightRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+	font-size: 1.0em;
+}
+
+@blue: #06F;
+@rose: #F39;
+@green: #6C0;
+@darkgray: #222;
+
+html, body {	
+	font-family: 'GeosansLightRegular';
+
+	a, a:visited {
+		text-decoration: none;
+		color: black;
+		outline: 0;
+	}
+	
+	height: 100%;
+	font-size: 1.1em;
+}
+
+nav {
+	width: 250px;
+	height: 100%;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+
+	text-align: center;
+	font-size: 1.2em;
+
+	border-right: 1px solid #E2E2E2;
+	background-color: #333333;
+
+	img {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	li {
+		a, a:visited, a:hover {
+			color: white;
+		}
+		
+		margin-top: 5px;
+		margin-bottom: 5px;
+		padding: 5px;
+		
+		&:hover {
+			background-color: @rose;
+		}
+
+		&.active {
+			background-color: @green;
+		}
+	}
+}
+
+blockquote {
+	font-style: italic;
+	padding-left: 20px;
+	border-left: 2px lightgray solid;
+}
+
+section#main {
+	
+	padding-left: 50px;
+
+	div.linkHeader {
+		padding-top: 10px;
+		margin-left: 250px;
+		padding-right: 10px;
+		text-align: right;
+
+		.button {
+			font-weight: bold;
+			padding-top: 3px;
+			padding-bottom: 3px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		a.blueButton {
+			.button();
+			background-color: lighten(@blue, 25%);
+			color: white;
+
+			&:hover {
+				background-color: @blue;
+			}
+		}
+
+		a.rssButton {
+			.button();
+			background-color: lighten(#fba733, 12%);
+			color: white;
+
+			&:hover {
+				background: darken(#fba733, 10%);
+			}
+		}
+	}
+
+	article {
+		margin-left: 250px;
+		width: 700px;
+		padding-bottom: 20px;
+
+		header {
+			padding-top: 20px;
+			padding-bottom: 20px;
+			border-bottom: 1px solid #E2E2E2;
+
+			h1 {
+				font-size: 1.4em;
+				margin: 0px;
+				padding: 0px;
+
+				color: black;
+				a:hover {
+					color: @rose;
+				}
+			}
+		}
+
+		section.content a {
+			color: @rose;
+		}
+
+		h2 {
+			font-size: 1.3em;
+		}
+
+		&.archives {
+			a:hover {
+				color: @rose;
+			}
+		}
+
+		p {
+			line-height: 1.5em;
+		}
+
+
+		&.link {
+
+			margin-top: 20px;
+			margin-bottom: 20px;
+			padding-bottom: 10px;
+			.clearfix();
+
+			a.titleLink {
+				color: black;
+
+				&:hover {
+					color: @rose;
+				}
+			}
+
+			a {
+				color: @green;
+				font-size: smaller;
+				&:hover {
+					color: @rose;
+				}
+			}
+
+			header {
+
+				padding-bottom: 10px;
+				margin-bottom: 0px;
+				margin-top: 0px;
+				padding-top: 0px;
+				border: 0px;
+
+				h2 {
+					margin-bottom: 0px;
+				}
+
+				span.date {
+					font-size: 0.8em;
+					color: gray;
+				}
+			}
+
+			img, section {
+				float: left;
+			}
+
+			section {
+				width: 480px;
+				padding-left: 20px;
+
+				p {
+					margin-top: 0px;
+					margin-bottom: 0px;
+				}
+			}
+
+			img {
+				width: 200px;
+			}
+		}
+	}
+}
+code {
+	font-size: 0.8em;
+	font-family: monospace, sans-serif;
+	font-weight: normal;
+	color: darken(gray, 20%);
+
+	background-color: lighten(gray, 45%);
+}
+
+/**
+ * Semantic helpers taking from helpless. https://github.com/m6tt/HelpLess
+ */ 
+.clearfix() {
+    &:before { content: ''; display: block; }
+    &:after { content: ''; display: table; clear: both; }
+    zoom: 1;
+}
+
+.transition(@property: all, @duration: .5s, @ease: linear, @delay: .0s) {
+	-webkit-transition: @arguments;
+       -moz-transition: @arguments;
+         -o-transition: @arguments;
+            transition: @arguments;
+}
+
+.background-gradient(@colourfrom: #bbb, @colourTo: #f1f1f1, @fallbackColour: #f1f1f1, @fallbackImageUrl: '') {
+    background-color: @fallbackColour;
+    background-image: url("@fallbackImage");
+    background-repeat: no-repeat;
+    background-image: -webkit-gradient(linear, left top, right top, from(@colourfrom), to(@colourTo));
+    background-image: -webkit-linear-gradient(left top, @colourfrom, @colourTo);
+    background-image: -moz-linear-gradient(left top, @colourfrom, @colourTo);
+    background-image: -ms-linear-gradient(left top, @colourfrom, @colourTo);
+    background-image: -o-linear-gradient(left top, @colourfrom, @colourTo);
+    /// For Internet Explorer 5.5 - 7 ///
+    filter: ~'progid:DXImageTransform.Microsoft.gradient(startColorstr=@colourfrom, endColorstr=@colourTo)';
+    /// For Internet Explorer 8 and newer ///
+    -ms-filter: ~'"progid:DXImageTransform.Microsoft.gradient(startColorstr=@colourfrom, endColorstr=@colourTo)"';
+  }
