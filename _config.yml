@@ -2,9 +2,9 @@
 # ~~~
 
 # Generation du site à la volée. 
-auto: true
+auto: false
 
 # On ne compile pas le dossier less
-exclude: less
+exclude: less, Rakefile
 
 paginate: 5

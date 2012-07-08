@@ -1,13 +1,61 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-	<meta charset="UTF-8">
-	<title>i.am.michiel</title>
-	<link rel="stylesheet" href="/css/style.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>{{title}} - i.am.michiel</title>
+
+	<meta name="author" content="Michiel Missotten">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="Mon blog sur le développement web. Des articles sur le html/css, Php avec Symfony mais aussi du Scala avec Play!" />
+	<meta name="google-site-verification" content="KzDzVSGESwaNjwv9-0rifgYkJhyuAK1UCMa_7HFL9fs" />
+
+	<link rel="stylesheet" type="text/css" href="/assets/stylesheets/style.css">
+
+	<script src="/assets/javascripts/modernizr-2.5.3.js"></script>
 </head>
+
 <body>
 
-	{{content}}
+	<header>
+		<nav>
+			<a href="/">Home</a>
+	    	<a {% if page.group == "articles" %}class="active"{% endif %} href="/articles.html">Articles</a>
+	    	<a href="/links">Liens</a>
+			<a href="/realisations.html">Réalisations</a>
+			<a href="/about.html">About me</a>
+		</nav>
+	</header>
 	
+    <section id="main">
+		{{content}}
+  	</section>
+
+  	<footer>
+		Michiel Missotten - 2012 - Mentions légales
+  	</footer>
+
+	<script>
+  	window._gaq = [['_setAccount','UA-17860828-3'],['_trackPageview'],['_trackPageLoadTime']];
+  	Modernizr.load({
+    		load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+  	});
+    Modernizr.load({
+      load: '/js/prettify.js',
+      complete: function() {
+        prettyPrint();   
+      }
+    })
+	</script>
+
+	<!--[if lt IE 7 ]>
+  	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+  	<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+	<![endif]-->
+  
 </body>
 </html>
