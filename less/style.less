@@ -11,9 +11,12 @@
 
 html, body {
 	font-family: Helvetica, arial, freesans, clean, sans-serif;
+	height: 100%;
 }
 
+
 body {
+	height: 100%;
 	width: 850px;
 	margin: 0 auto;
 
@@ -69,18 +72,20 @@ header {
 }
 
 footer {
-	position: absolute;
-	bottom: 10px;
+	position: relative;
+	bottom: 0px;
 
 	width: 850px;
 	margin: 0 auto;
 
-	padding-top: 10px;
 	text-align: center;
 	border-top: 1px solid lightgray;
 }
 
 #main {
+	padding-bottom: 50px;
+
+
 	a {
 		color: @rose;
 

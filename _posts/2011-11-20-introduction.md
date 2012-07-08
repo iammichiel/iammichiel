@@ -1,5 +1,5 @@
 ---
-title: Test
+title: L'introduction
 layout: post
 group: "articles"
 ---
@@ -24,13 +24,3 @@ A quoi faut-il s'attendre sur ce blog?
  * De développement en général. 
 
 Bon allez, c'est parti. In case of trouble : contact me. 
-
-<div class="syntax">
-{% highlight html %}
-<div class="container_12">
-	<p class="grid_4">Une première phrase pleine de sense. </p>
-	<p class="grid_4">Une deuxième qui l'est beaucoup moins.</p>
-	<p class="grid_4">Il faudra finir en beauté.</p>
-</div>
-{% endhighlight %}
-</div>
