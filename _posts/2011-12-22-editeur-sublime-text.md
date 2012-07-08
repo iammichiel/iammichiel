@@ -1,6 +1,7 @@
 ---
 layout: post 
-group: "articles"
+title: Sublime Text 2
+category: article
 ---
 
 # Sublime Text 2 

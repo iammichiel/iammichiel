@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L'introduction
-group: "articles"
+category: article
 ---
 
 # Introduction

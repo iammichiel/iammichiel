@@ -18,6 +18,7 @@ html, body {
 body {
 	height: 100%;
 	width: 850px;
+
 	margin: 0 auto;
 
 	a, a:visited {
@@ -31,6 +32,11 @@ body {
 
 	h1 {
 		font-size: 2em;
+	}
+
+	h2 {
+		padding-top: 20px;
+		margin-bottom: 10px;
 	}
 
 	div.syntax {
@@ -68,18 +74,17 @@ header {
 }
 
 footer {
-	position: relative;
-	bottom: 0px;
-
-	width: 850px;
-	margin: 0 auto;
-
+	clear: both;
+	display: block;
 	text-align: center;
-	border-top: 1px solid lightgray;
+
+	width: 700px;
 }
 
 #main {
 	padding-bottom: 50px;
+	margin-bottom: 50px;
+	#blr.ns-helpers.clearfix();
 
 	summary {
 		display: block;	
@@ -104,13 +109,15 @@ footer {
 
 		border-left: 1px solid lightgray;
 		padding-left: 20px;
+		padding-bottom: 10px;
+		margin-bottom: 50px;
 	}
 
 	a {
-		color: @rose;
+		color: @green;
 
 		&:hover {
-			color: @green;
+			color: @rose;
 		}
 	}
 }

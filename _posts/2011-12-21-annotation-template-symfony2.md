@@ -1,7 +1,7 @@
 ---
 layout: post
 title: L'annotation Template dans Symfony2
-group: "articles"
+category: article
 ---
 
 # L'annotation Template dans Symfony2

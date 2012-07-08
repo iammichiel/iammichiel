@@ -23,7 +23,7 @@
 
 	<header>
 		<nav>
-			<a href="/">Home</a>
+			<a {% if page.group == "home" %} class="active" {% endif %} href="/">Home</a>
 	    	<a {% if page.group == "articles" %}class="active"{% endif %} href="/articles.html">Articles</a>
 			<a href="/realisations.html">Réalisations</a>
 			<a href="/about.html">About me</a>

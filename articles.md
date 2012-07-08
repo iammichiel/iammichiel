@@ -7,9 +7,9 @@ group: "articles"
 # Liste des articles
 
 <ul>
-	{% for post in site.posts %}
+	{% for post in site.categories.article %}
 		<li>
-			<a href="{{ post.url }}">{{ post.date | date_to_string }} - {{ post.title }}</a>
+			<a href="{{ post.url }}">{{ post.title }}</a>
 		</li>
 	{% endfor %}
 </ul>
