@@ -2,4 +2,12 @@
 layout: default
 ---
 
-{{ content }}
+<summary>
+	<div class="day">{{ page.date | date: "%d") }}</div>
+	<div class="month">{{ page.date | date: "%b") }}</div>
+	<div class="year">{{ page.date | date: "%Y") }}</div>
+</summary>
+
+<article>
+	{{content}}
+</article>

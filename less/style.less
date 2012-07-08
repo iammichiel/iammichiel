@@ -33,10 +33,6 @@ body {
 		font-size: 2em;
 	}
 
-	span.date {
-		
-	}
-
 	div.syntax {
 		background-color: #272822;
 		color: #F8F8F2;
@@ -85,6 +81,30 @@ footer {
 #main {
 	padding-bottom: 50px;
 
+	summary {
+		display: block;	
+		float: left;
+		padding-top: 26px;
+		padding-right: 20px;
+
+		div.day {
+			font-size: 2em;
+		}
+		div.month {
+			font-size: 1.2em;
+		}
+		div.year {
+			font-size: 1em;
+		}
+	}
+
+	article {
+		width: 700px;
+		float: left;
+
+		border-left: 1px solid lightgray;
+		padding-left: 20px;
+	}
 
 	a {
 		color: @rose;

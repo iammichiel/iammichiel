@@ -1,6 +1,6 @@
 ---
-title: L'introduction
 layout: post
+title: L'introduction
 group: "articles"
 ---
 

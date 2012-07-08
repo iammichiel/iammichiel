@@ -45,15 +45,15 @@ return $this->render('MonBundle:moncontrolleur:mavue.html.twig', $mesparams);
 Un simple return des paramètres passés à la vue fera l'affaire. De plus, l'annotation **@Template** force une cohérence entre nom de controlleur, noms de fonction et noms de vues. Tout simplement si, cette convention de nommage n'est pas respecté, le code ne pourra s'éxécuter et donc erreur 500. Une bonne pratique sera donc d'utiliser l'annotation @Template autant que possible.
 
 <div class="syntax">
-{% highlight php startinline %}	
-	/**
-	 * @Template
-	 */
-	public function indexAction() {
-		... 
-		// Les données à transmettre à la vue.
-		return array();
-	}
+{% highlight php startinline %}
+/**
+ * @Template
+ */
+public function indexAction() {
+	
+	// Les données à transmettre à la vue.
+	return array();
+}
 {% endhighlight %}
 </div>
 

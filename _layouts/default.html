@@ -7,7 +7,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title>{{title}} - i.am.michiel</title>
+	<title>{{page.title}} - i.am.michiel</title>
 
 	<meta name="author" content="Michiel Missotten">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
@@ -35,16 +35,10 @@
   	</section>
 
 	<script>
-  	window._gaq = [['_setAccount','UA-17860828-3'],['_trackPageview'],['_trackPageLoadTime']];
-  	Modernizr.load({
-    		load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
-  	});
-    Modernizr.load({
-      load: '/js/prettify.js',
-      complete: function() {
-        prettyPrint();   
-      }
-    })
+	  	window._gaq = [['_setAccount','UA-17860828-3'],['_trackPageview'],['_trackPageLoadTime']];
+	  	Modernizr.load({
+	    		load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+	  	});
 	</script>
 
 	<!--[if lt IE 7 ]>
