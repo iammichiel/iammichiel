@@ -11,7 +11,7 @@ continuer de tester un peu avant d'en parler). Il s'agit de [Sublime Text 2](htt
 
 Dans le monde du développement, vous remarquerez que chaque développeur a ses propres habitudes, ses petits softs préférés. Certains ne jureront que par Eclipse, d'autres lui reprocheront sa lenteur (je fais partie de la deuxième). Chacun a son petit avis en ce qui concerne les outils de développement. 
 
-Dans le monde du Mac (parceque celui qui me dit qu'il fait du développement web sur Windows, il sort) il y a bien une réference qui existe pour l'édition rapide de fichier. Je parle pas de gros IDE ni de processeur de texte (style word ou encore pages) mais bien d'éditeur de texte. Il s'agit de [TextMate]. 
+Dans le monde du Mac (parceque celui qui me dit qu'il fait du développement web sur Windows, il sort) il y a bien une réference qui existe pour l'édition rapide de fichier. Je parle pas de gros IDE ni de processeur de texte (style word ou encore pages) mais bien d'éditeur de texte. Il s'agit de [TextMate](http://macromates.com/). 
 
 Ce petit soft assez léger est vraiment pratique pour l'édition rapide de fichiers . Que ce soit du HTML ou encore du CSS, si il faut faire une petite modification, pas la peine de démarrer l'usine à gaz et d'aller prendre un café. TextMate répond à ce besoin. Trop léger pour constituer un environnement de développement complet mais ayant plus de fonctionnalité qu'un simple editeur de texte, il se situe quelques part entre les deux.
 
