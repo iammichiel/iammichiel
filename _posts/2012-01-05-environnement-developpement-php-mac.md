@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Environnement de développement PHP sur Mac OS
+title: Environnement de développement PHP
 category: article
 ---
 
-# Environnement de développement PHP sur Mac OS
+# Environnement de développement PHP sur Mac
 
 Pour travailller sur des projets PHP avec Symfony sur Mac, il faut mettre en place un environnement de développement. C'est à dire installer quelques applications, logiciels dont on va se servir. Le stricte minimum va être ceci : 
 

@@ -1,1 +1,675 @@
-.hll{background-color:#49483e}.c{color:#75715e}.err{color:#960050;background-color:#1e0010}.k{color:#66d9ef}.l{color:#ae81ff}.n{color:#f8f8f2}.o{color:#f92672}.p{color:#f8f8f2}.cm{color:#75715e}.cp{color:#75715e}.c1{color:#75715e}.cs{color:#75715e}.ge{font-style:italic}.gs{font-weight:bold}.kc{color:#66d9ef}.kd{color:#66d9ef}.kn{color:#f92672}.kp{color:#66d9ef}.kr{color:#66d9ef}.kt{color:#66d9ef}.ld{color:#e6db74}.m{color:#ae81ff}.s{color:#e6db74}.na{color:#a6e22e}.nb{color:#f8f8f2}.nc{color:#a6e22e}.no{color:#66d9ef}.nd{color:#a6e22e}.ni{color:#f8f8f2}.ne{color:#a6e22e}.nf{color:#a6e22e}.nl{color:#f8f8f2}.nn{color:#f8f8f2}.nx{color:#a6e22e}.py{color:#f8f8f2}.nt{color:#f92672}.nv{color:#f8f8f2}.ow{color:#f92672}.w{color:#f8f8f2}.mf{color:#ae81ff}.mh{color:#ae81ff}.mi{color:#ae81ff}.mo{color:#ae81ff}.sb{color:#e6db74}.sc{color:#e6db74}.sd{color:#e6db74}.s2{color:#e6db74}.se{color:#ae81ff}.sh{color:#e6db74}.si{color:#e6db74}.sx{color:#e6db74}.sr{color:#e6db74}.s1{color:#e6db74}.ss{color:#e6db74}.bp{color:#f8f8f2}.vc{color:#f8f8f2}.vg{color:#f8f8f2}.vi{color:#f8f8f2}.il{color:#ae81ff}article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}audio,canvas,video{display:inline-block;*display:inline;*zoom:1}audio:not([controls]){display:none}[hidden]{display:none}html{font-size:100%;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body{margin:0;font-size:13px;line-height:1.231}body,button,input,select,textarea{font-family:sans-serif;color:#222}::-moz-selection{background:#000;color:#fff;text-shadow:none}::selection{background:#000;color:#fff;text-shadow:none}a{color:#00e}a:visited{color:#551a8b}a:hover{color:#00e}a:focus{outline:thin dotted}a:hover,a:active{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}blockquote{margin:1em 40px}dfn{font-style:italic}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}ins{background:#ff9;color:#000;text-decoration:none}mark{background:#ff0;color:#000;font-style:italic;font-weight:bold}pre,code,kbd,samp{font-family:monospace,serif;_font-family:'courier new',monospace;font-size:1em}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}q{quotes:none}q:before,q:after{content:"";content:none}small{font-size:85%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}ul,ol{margin:1em 0;padding:0 0 0 40px}dd{margin:0 0 0 40px}nav ul,nav ol{list-style:none;list-style-image:none;margin:0;padding:0}img{border:0;-ms-interpolation-mode:bicubic;vertical-align:middle}svg:not(:root){overflow:hidden}figure{margin:0}form{margin:0}fieldset{border:0;margin:0;padding:0}label{cursor:pointer}legend{border:0;*margin-left:-7px;padding:0}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle}button,input{line-height:normal;*overflow:visible}table button,table input{*overflow:auto}button,input[type="button"],input[type="reset"],input[type="submit"]{cursor:pointer;-webkit-appearance:button}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top;resize:vertical}input:invalid,textarea:invalid{background-color:#f0dddd}table{border-collapse:collapse;border-spacing:0}td{vertical-align:top}html,body{font-family:Helvetica,arial,freesans,clean,sans-serif;height:100%}body{height:100%;width:850px;margin:0 auto}body a,body a:visited{color:black;text-decoration:none}body a:hover,body a:visited:hover{color:black}body h1{font-size:2em}body h2{padding-top:20px;margin-bottom:10px}body div.syntax{background-color:#272822;color:#f8f8f2}body div.syntax pre{padding:7px}header{text-align:right}header nav{font-size:1.1em}header nav a{display:inline-block;width:100px;padding-top:30px;padding-bottom:7px;padding-right:5px;border-bottom:4px solid white}header nav a.active,header nav a:hover{border-bottom:4px solid #06f;background-color:#cce0ff}footer{clear:both;display:block;text-align:center;width:700px}#main{padding-bottom:50px;margin-bottom:50px;*zoom:1}#main summary{display:block;float:left;padding-top:26px;padding-right:20px}#main summary div.day{font-size:2em}#main summary div.month{font-size:1.2em}#main summary div.year{font-size:1em}#main article{width:700px;float:left;border-left:1px solid lightgray;padding-left:20px;padding-bottom:10px;margin-bottom:50px}#main a{color:#6c0}#main a:hover{color:#f39}
+/*
+ * HTML5 ✰ Boilerplate - LESS
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ *
+ * Detailed information about this CSS: h5bp.com/css
+ *
+ * Converted to LESS by @m6tt: m6tt.com/less-boilerplate
+ */
+#blr {
+  /* ==|== normalize ======================================== */
+
+  /* ==|== non-semantic helper classes ======================================== */
+
+  /* ==|== print styles ======================================================= */
+
+}
+.hll {
+  background-color: #49483e;
+}
+.c {
+  color: #75715e;
+}
+/* Comment */
+.err {
+  color: #960050;
+  background-color: #1e0010;
+}
+/* Error */
+.k {
+  color: #66d9ef;
+}
+/* Keyword */
+.l {
+  color: #ae81ff;
+}
+/* Literal */
+.n {
+  color: #f8f8f2;
+}
+/* Name */
+.o {
+  color: #f92672;
+}
+/* Operator */
+.p {
+  color: #f8f8f2;
+}
+/* Punctuation */
+.cm {
+  color: #75715e;
+}
+/* Comment.Multiline */
+.cp {
+  color: #75715e;
+}
+/* Comment.Preproc */
+.c1 {
+  color: #75715e;
+}
+/* Comment.Single */
+.cs {
+  color: #75715e;
+}
+/* Comment.Special */
+.ge {
+  font-style: italic;
+}
+/* Generic.Emph */
+.gs {
+  font-weight: bold;
+}
+/* Generic.Strong */
+.kc {
+  color: #66d9ef;
+}
+/* Keyword.Constant */
+.kd {
+  color: #66d9ef;
+}
+/* Keyword.Declaration */
+.kn {
+  color: #f92672;
+}
+/* Keyword.Namespace */
+.kp {
+  color: #66d9ef;
+}
+/* Keyword.Pseudo */
+.kr {
+  color: #66d9ef;
+}
+/* Keyword.Reserved */
+.kt {
+  color: #66d9ef;
+}
+/* Keyword.Type */
+.ld {
+  color: #e6db74;
+}
+/* Literal.Date */
+.m {
+  color: #ae81ff;
+}
+/* Literal.Number */
+.s {
+  color: #e6db74;
+}
+/* Literal.String */
+.na {
+  color: #a6e22e;
+}
+/* Name.Attribute */
+.nb {
+  color: #f8f8f2;
+}
+/* Name.Builtin */
+.nc {
+  color: #a6e22e;
+}
+/* Name.Class */
+.no {
+  color: #66d9ef;
+}
+/* Name.Constant */
+.nd {
+  color: #a6e22e;
+}
+/* Name.Decorator */
+.ni {
+  color: #f8f8f2;
+}
+/* Name.Entity */
+.ne {
+  color: #a6e22e;
+}
+/* Name.Exception */
+.nf {
+  color: #a6e22e;
+}
+/* Name.Function */
+.nl {
+  color: #f8f8f2;
+}
+/* Name.Label */
+.nn {
+  color: #f8f8f2;
+}
+/* Name.Namespace */
+.nx {
+  color: #a6e22e;
+}
+/* Name.Other */
+.py {
+  color: #f8f8f2;
+}
+/* Name.Property */
+.nt {
+  color: #f92672;
+}
+/* Name.Tag */
+.nv {
+  color: #f8f8f2;
+}
+/* Name.Variable */
+.ow {
+  color: #f92672;
+}
+/* Operator.Word */
+.w {
+  color: #f8f8f2;
+}
+/* Text.Whitespace */
+.mf {
+  color: #ae81ff;
+}
+/* Literal.Number.Float */
+.mh {
+  color: #ae81ff;
+}
+/* Literal.Number.Hex */
+.mi {
+  color: #ae81ff;
+}
+/* Literal.Number.Integer */
+.mo {
+  color: #ae81ff;
+}
+/* Literal.Number.Oct */
+.sb {
+  color: #e6db74;
+}
+/* Literal.String.Backtick */
+.sc {
+  color: #e6db74;
+}
+/* Literal.String.Char */
+.sd {
+  color: #e6db74;
+}
+/* Literal.String.Doc */
+.s2 {
+  color: #e6db74;
+}
+/* Literal.String.Double */
+.se {
+  color: #ae81ff;
+}
+/* Literal.String.Escape */
+.sh {
+  color: #e6db74;
+}
+/* Literal.String.Heredoc */
+.si {
+  color: #e6db74;
+}
+/* Literal.String.Interpol */
+.sx {
+  color: #e6db74;
+}
+/* Literal.String.Other */
+.sr {
+  color: #e6db74;
+}
+/* Literal.String.Regex */
+.s1 {
+  color: #e6db74;
+}
+/* Literal.String.Single */
+.ss {
+  color: #e6db74;
+}
+/* Literal.String.Symbol */
+.bp {
+  color: #f8f8f2;
+}
+/* Name.Builtin.Pseudo */
+.vc {
+  color: #f8f8f2;
+}
+/* Name.Variable.Class */
+.vg {
+  color: #f8f8f2;
+}
+/* Name.Variable.Global */
+.vi {
+  color: #f8f8f2;
+}
+/* Name.Variable.Instance */
+.il {
+  color: #ae81ff;
+}
+/* Literal.Number.Integer.Long */
+/* =============================================================================
+       HTML5 display definitions
+       ========================================================================== */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]) {
+  display: none;
+}
+[hidden] {
+  display: none;
+}
+/* =============================================================================
+       Base
+       ========================================================================== */
+/*
+     * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+     * 2. Force vertical scrollbar in non-IE
+     * 3. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+     */
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.231;
+}
+body,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+  color: #222;
+}
+/*
+     * Remove text-shadow in selection highlight: h5bp.com/i
+     * These selection declarations have to be separate
+     * Also: hot pink! (or customize the background color to match your design)
+     */
+::-moz-selection {
+  background: #000000;
+  color: #ffffff;
+  text-shadow: none;
+}
+::selection {
+  background: #000000;
+  color: #ffffff;
+  text-shadow: none;
+}
+/* =============================================================================
+       Links
+       ========================================================================== */
+a {
+  color: #0000ee;
+}
+a:visited {
+  color: #551a8b;
+}
+a:hover {
+  color: #0000ee;
+}
+a:focus {
+  outline: thin dotted;
+}
+/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+a:hover,
+a:active {
+  outline: 0;
+}
+/* =============================================================================
+       Typography
+       ========================================================================== */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+blockquote {
+  margin: 1em 40px;
+}
+dfn {
+  font-style: italic;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+ins {
+  background: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+/* Redeclare monospace font family: h5bp.com/j */
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+/* Improve readability of pre-formatted text in all browsers */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+q {
+  quotes: none;
+}
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+small {
+  font-size: 85%;
+}
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+/* =============================================================================
+       Lists
+       ========================================================================== */
+ul,
+ol {
+  margin: 1em 0;
+  padding: 0 0 0 40px;
+}
+dd {
+  margin: 0 0 0 40px;
+}
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+/* =============================================================================
+       Embedded content
+       ========================================================================== */
+/*
+     * 1. Improve image quality when scaled in IE7: h5bp.com/d
+     * 2. Remove the gap between images and borders on image containers: h5bp.com/e
+     */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+/*
+     * Correct overflow not hidden in IE9
+     */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* =============================================================================
+       Figures
+       ========================================================================== */
+figure {
+  margin: 0;
+}
+/* =============================================================================
+       Forms
+       ========================================================================== */
+form {
+  margin: 0;
+}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+/* Indicate that 'label' will shift focus to the associated form element */
+label {
+  cursor: pointer;
+}
+/*
+     * 1. Correct color not inheriting in IE6/7/8/9
+     * 2. Correct alignment displayed oddly in IE6/7
+     */
+legend {
+  border: 0;
+  *margin-left: -7px;
+  padding: 0;
+}
+/*
+     * 1. Correct font-size not inheriting in all browsers
+     * 2. Remove margins in FF3/4 S5 Chrome
+     * 3. Define consistent vertical alignment display in all browsers
+     */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+/*
+     * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
+     * 2. Correct inner spacing displayed oddly in IE6/7
+     */
+button,
+input {
+  line-height: normal;
+  *overflow: visible;
+}
+/*
+     * Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues in IE6/7
+     */
+table button,
+table input {
+  *overflow: auto;
+}
+/*
+     * 1. Display hand cursor for clickable form elements
+     * 2. Allow styling of clickable form elements in iOS
+     */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+/*
+     * Consistent box sizing and appearance
+     */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/*
+     * Remove inner padding and border in FF3/4: h5bp.com/l
+     */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/*
+     * 1. Remove default vertical scrollbar in IE6/7/8/9
+     * 2. Allow only vertical resizing
+     */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+/* Colors for form validity */
+input:invalid,
+textarea:invalid {
+  background-color: #f0dddd;
+}
+/* =============================================================================
+       Tables
+       ========================================================================== */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td {
+  vertical-align: top;
+}
+html,
+body {
+  font-family: Lato;
+  height: 100%;
+  color: #616161;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+}
+body {
+  height: 100%;
+  width: 850px;
+  margin: 0 auto;
+}
+body a,
+body a:visited {
+  color: black;
+  text-decoration: none;
+}
+body a:hover,
+body a:visited:hover {
+  color: black;
+}
+body h1 {
+  font-size: 2em;
+  font-weight: normal;
+}
+body h2 {
+  padding-top: 20px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+body div.syntax {
+  background-color: #272822;
+  color: #F8F8F2;
+  font-size: 0.8em;
+}
+body div.syntax pre {
+  padding: 7px;
+}
+header {
+  text-align: right;
+}
+header nav {
+  font-size: 1.1em;
+}
+header nav a {
+  display: inline-block;
+  width: 100px;
+  padding-top: 30px;
+  padding-bottom: 7px;
+  padding-right: 5px;
+  border-bottom: 4px solid white;
+}
+header nav a.active,
+header nav a:hover {
+  border-bottom: 4px solid #0066ff;
+  background-color: #cce0ff;
+}
+footer {
+  clear: both;
+  display: block;
+  text-align: center;
+  width: 700px;
+}
+#main {
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  *zoom: 1;
+}
+#main summary {
+  display: block;
+  float: left;
+  padding-top: 26px;
+  padding-right: 20px;
+}
+#main summary div.day {
+  font-size: 2em;
+}
+#main summary div.month {
+  font-size: 1.2em;
+}
+#main summary div.year {
+  font-size: 1em;
+}
+#main article {
+  width: 700px;
+  float: left;
+  border-left: 1px solid lightgray;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 50px;
+}
+#main a {
+  color: #66cc00;
+}
+#main a:hover {
+  color: #ff3399;
+}

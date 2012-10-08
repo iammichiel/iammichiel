@@ -1,10 +1,10 @@
 ---
 layout: post
 category: article 
-title: Environnement de développement Symfony 2 sur Mac (bis)
+title: Environnement de développement PHP (suite)
 ---
 
-# Environnement de développement Symfony 2 sur Mac
+# Environnement de développement Symfony
 
 Pour continuer la série du post que j'ai fait précedemment, il reste encore quelques petites manipulations à faire avant de pouvoir commencer un projet sur Symfony2. Voici les différentes étapes qu'il faudra répéter pour chaque projet. 
 
