@@ -268,9 +268,7 @@ nav,
 section {
   display: block;
 }
-audio,
-canvas,
-video {
+audio, canvas, video {
   display: inline-block;
   *display: inline;
   *zoom: 1;
@@ -339,8 +337,7 @@ a:focus {
   outline: thin dotted;
 }
 /* Improve readability when focused and hovered in all browsers: h5bp.com/h */
-a:hover,
-a:active {
+a:hover, a:active {
   outline: 0;
 }
 /* =============================================================================
@@ -349,8 +346,7 @@ a:active {
 abbr[title] {
   border-bottom: 1px dotted;
 }
-b,
-strong {
+b, strong {
   font-weight: bold;
 }
 blockquote {
@@ -396,8 +392,7 @@ pre {
 q {
   quotes: none;
 }
-q:before,
-q:after {
+q:before, q:after {
   content: "";
   content: none;
 }
@@ -405,8 +400,7 @@ small {
   font-size: 85%;
 }
 /* Position subscript and superscript content without affecting line-height: h5bp.com/k */
-sub,
-sup {
+sub, sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -421,16 +415,14 @@ sub {
 /* =============================================================================
        Lists
        ========================================================================== */
-ul,
-ol {
+ul, ol {
   margin: 1em 0;
   padding: 0 0 0 40px;
 }
 dd {
   margin: 0 0 0 40px;
 }
-nav ul,
-nav ol {
+nav ul, nav ol {
   list-style: none;
   list-style-image: none;
   margin: 0;
@@ -502,16 +494,14 @@ textarea {
      * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
      * 2. Correct inner spacing displayed oddly in IE6/7
      */
-button,
-input {
+button, input {
   line-height: normal;
   *overflow: visible;
 }
 /*
      * Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues in IE6/7
      */
-table button,
-table input {
+table button, table input {
   *overflow: auto;
 }
 /*
@@ -528,8 +518,7 @@ input[type="submit"] {
 /*
      * Consistent box sizing and appearance
      */
-input[type="checkbox"],
-input[type="radio"] {
+input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
@@ -545,8 +534,7 @@ input[type="search"]::-webkit-search-decoration {
 /*
      * Remove inner padding and border in FF3/4: h5bp.com/l
      */
-button::-moz-focus-inner,
-input::-moz-focus-inner {
+button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
@@ -560,8 +548,7 @@ textarea {
   resize: vertical;
 }
 /* Colors for form validity */
-input:invalid,
-textarea:invalid {
+input:invalid, textarea:invalid {
   background-color: #f0dddd;
 }
 /* =============================================================================
@@ -574,8 +561,7 @@ table {
 td {
   vertical-align: top;
 }
-html,
-body {
+html, body {
   font-family: Lato;
   height: 100%;
   color: #616161;
@@ -588,13 +574,11 @@ body {
   width: 850px;
   margin: 0 auto;
 }
-body a,
-body a:visited {
+body a, body a:visited {
   color: black;
   text-decoration: none;
 }
-body a:hover,
-body a:visited:hover {
+body a:hover, body a:visited:hover {
   color: black;
 }
 body h1 {
@@ -606,12 +590,15 @@ body h2 {
   margin-bottom: 10px;
   font-weight: normal;
 }
-body div.syntax {
+body span.syntax {
+  padding: 4px;
+}
+body div.syntax, body span.syntax {
   background-color: #272822;
   color: #F8F8F2;
   font-size: 0.8em;
 }
-body div.syntax pre {
+body div.syntax pre, body span.syntax pre {
   padding: 7px;
 }
 header {
@@ -628,8 +615,7 @@ header nav a {
   padding-right: 5px;
   border-bottom: 4px solid white;
 }
-header nav a.active,
-header nav a:hover {
+header nav a.active, header nav a:hover {
   border-bottom: 4px solid #0066ff;
   background-color: #cce0ff;
 }
