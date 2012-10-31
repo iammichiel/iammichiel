@@ -7,9 +7,13 @@ comments: true
 
 # Spotify et la bande passante 
 
-Petit post pour parler d'un truc que j'ai découvert aujourd'hui et que je trouve assez hallucinant. Je suis un grand utilisateur de [Spotify][spotify]. Je me suis abonné en compte premium, je m'en sers sur toutes mes machines ainsi que sur mon téléphone portable. Toujours très satisfait de la qualité, du choix tout ca, mais le débat n'est pas la. J'ai depuis peu une connection internet lamentable. Du genre vraiment lamentable, même la télévision via la box ne marche pas, "pas assez de débit". 
+{% excerpt %}
+
+Petit post pour parler d'un truc que j'ai découvert aujourd'hui et que je trouve assez hallucinant. Je suis un grand utilisateur de [Spotify](http://www.spotify.com/). Je me suis abonné en compte premium, je m'en sers sur toutes mes machines ainsi que sur mon téléphone portable. Toujours très satisfait de la qualité, du choix tout ca, mais le débat n'est pas la. J'ai depuis peu une connection internet lamentable. Du genre vraiment lamentable, même la télévision via la box ne marche pas, "pas assez de débit". 
 
 Du coup, je commence à faire attention à ce que je consomme en bande passante, je lance les grosses mises-à-jour la nuit, etc. Mais il restait une inconnue dans ce système. Comment se comporte Spotify dans l'histoire? 
+
+{% endexcerpt %}
 
 ## Un modèle P2P
 
@@ -34,7 +38,6 @@ L'alternative que j'ai choisi, c'est l'utilisation de l'application mobile. En e
 
 PS : Il y a pas mal d'informations sur la page [Wikipedia][wikipedia] et sur dans article : [How Spotify works][npr-article]
 
-[spotify]: http://www.spotify.com/
 [285ms]: http://www.spotify.com/fr/jobs/view/ocnMWfw1/
 [wikipedia]: http://en.wikipedia.org/wiki/Spotify
 [npr-article]: http://www.npr.org/blogs/therecord/2011/11/09/141594727/how-spotify-works-pay-the-majors-use-p2p-technology

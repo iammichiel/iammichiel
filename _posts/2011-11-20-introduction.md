@@ -5,6 +5,12 @@ comments: true
 category: article
 ---
 
+{% excerpt %}
+
+Commencons par le début. Comme tout geek, je me tiens au courant des dernières actualités (du moins, j'essaye), je rencontre des problèmes, je travaille sur des technologies pas toujours très documentées... (Non, je ne vise personne, pas dès le premier billet quand même...) et j'ai très souvent remerciés ces bloggeurs qui ont eu la bonne idée de documenter un peu leur galères.
+
+{% endexcerpt %}
+
 # Introduction
 
 Commencons par le début. Comme tout geek, je me tiens au courant des dernières actualités (du moins, j'essaye), je rencontre des problèmes, je travaille sur des technologies pas toujours très documentées... (Non, je ne vise personne, pas dès le premier billet quand même...) et j'ai très souvent remerciés ces bloggeurs qui ont eu la bonne idée de documenter un peu leur galères.

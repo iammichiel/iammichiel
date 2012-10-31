@@ -7,9 +7,11 @@ category: article
 
 # Synchroniser ses BDD sur Heroku
 
+{% excerpt %}
 Je travaille actuellement sur petite application de suivi de projet. Bien que l'application soit encore au stade de développement et qu'il manque encore une floppée de fonctionnalités avant que le projet ne soit viable, je m'en sers déjà. J'ai donc une version de "production" en ligne sur Heroku avec des données de "production" dans une base de données Postgresql. 
 
 Maintenant quand je développe en local, j'aimerais bien avoir un jeu de données et tant qu'à faire, un jeu de données réel pour un peu plus de pertinence. L'idéal serait donc de pouvoir synchroniser ma base de données en local avec la base de données de production. Et uniquement dans le sens production -> développement. Voyons comment on peut faire ça. 
+{% endexcerpt %}
 
 
 ## Backup!

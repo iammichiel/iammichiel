@@ -7,7 +7,9 @@ category: article
 
 # Deployer une application Symfony 2 sur OVH
 
+{% excerpt %}
 Malgré des taux d'échecs importants, certains projets informatiques arrivent à terme. Dans certains cas, il faut les déployer en ligne. Et dans certains cas, il faut déployer chez OVH. Et dans certains de ces cas la, il faut déployer sur un serveur mutualisée sans accès SSH. Et ça, c'est pas intuitif.
+{% endexcerpt %}
 
 ## Deployer le projet
 

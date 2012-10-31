@@ -27,13 +27,15 @@
 			<a {% if page.group == "home" %} class="active" {% endif %} href="/">Home</a>
 	    	<a {% if page.group == "articles" %}class="active"{% endif %} href="/articles.html">Articles</a>
 			<a {% if page.group == "realisation" %}class="active"{% endif %} href="/realisations.html">Réalisations</a>
-			<a href="/about.html">About me</a>
+			<a {% if page.group == "about" %}class="active"{% endif %} href="/about.html">About me</a>
 		</nav>
 	</header>
 	
     <section id="main">
 		{{content}}
   	</section>
+
+  	<footer>i.am.michiel - Copyright 2012</footer>
 
     <script type="text/javascript">
           var _gaq = _gaq || [];
