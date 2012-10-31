@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Symfony2 et la console, quelques astuces
+comments: true
 category: article
 ---
 

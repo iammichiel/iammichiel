@@ -1,7 +1,8 @@
 ---
 layout: post
-category: article 
 title: Environnement de développement PHP (suite)
+comments: true
+category: article 
 ---
 
 # Environnement de développement Symfony

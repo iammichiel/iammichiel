@@ -2,6 +2,7 @@
 layout: post
 category: article 
 title: Spotify et la bande passante
+comments: true
 ---
 
 # Spotify et la bande passante 

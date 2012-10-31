@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Environnement de développement PHP
+comments: true
 category: article
 ---
 

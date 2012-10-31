@@ -1,7 +1,8 @@
 ---
 layout: post
-category: article 
 title: Synchroniser ses BDD sur Heroku
+comments: true
+category: article 
 ---
 
 # Synchroniser ses BDD sur Heroku

@@ -1,7 +1,8 @@
 ---
 layout: post
-category: article 
 title: Deployer une application Symfony 2 sur OVH
+comments: true
+category: article 
 ---
 
 # Deployer une application Symfony 2 sur OVH

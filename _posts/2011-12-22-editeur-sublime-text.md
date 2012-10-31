@@ -1,6 +1,7 @@
 ---
 layout: post 
 title: Sublime Text 2
+comments: true
 category: article
 ---
 

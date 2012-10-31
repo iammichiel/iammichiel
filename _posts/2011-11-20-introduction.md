@@ -1,6 +1,7 @@
 ---
 layout: post
 title: L'introduction
+comments: true
 category: article
 ---
 

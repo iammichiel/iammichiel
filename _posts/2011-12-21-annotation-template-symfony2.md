@@ -1,6 +1,7 @@
 ---
 layout: post
 title: L'annotation Template dans Symfony2
+comments: true
 category: article
 ---
 

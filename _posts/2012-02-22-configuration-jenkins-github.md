@@ -1,7 +1,8 @@
 ---
 layout: post
-category: article 
 title: Jenkins et Github
+comments: true
+category: article 
 ---
 
 # Configuration de Jenkins et Github
