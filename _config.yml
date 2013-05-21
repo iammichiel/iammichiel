@@ -1,9 +1,6 @@
 # Configuration. 
 # ~~~
 
-# Generation du site à la volée. 
-auto: false
-
 # On ne compile pas le dossier less
 exclude: less, Rakefile
 

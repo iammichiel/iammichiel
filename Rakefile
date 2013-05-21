@@ -4,14 +4,14 @@
 desc "Cleans generated files and rebuilds site"
 def jekyll(opts="", path="")
   sh "rm -rf _site"
-  sh path + "jekyll --pygments " + opts
+  sh path + "jekyll " + opts
 end
 
 # Default task : start jekyll locally.
 # ~~~
 desc "Serve on Localhost with port 4000"
 task :default do
-  jekyll "--server --auto"
+  jekyll "serve --watch"
 end
 
 
