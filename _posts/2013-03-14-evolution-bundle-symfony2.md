@@ -9,7 +9,7 @@ comments: true
 
 {% excerpt %}
 
-Depuis quelques temps, je m'intéresse à un toutes ces bonnes pratiques qui nous sont vantées un peu partout : l'agile, le continous deployment, le BDD (Behaviour Driven Development), etc. Pourtant, la mise en place de ces techniques n'est pas toujours évidente dans un cadre "entreprise". Il faut y aller par pétites étapes et [l'EvolutionBundle][evolutionbundle-github] est un outil crée pour l'une de ces bonnes pratiques : **le Continuous Deployment**.
+Depuis quelques temps, je m'intéresse à un toutes ces bonnes pratiques qui nous sont vantées un peu partout : l'agile, le continous deployment, le BDD (Behaviour Driven Development), etc. Pourtant, la mise en place de ces techniques n'est pas toujours évidente dans un cadre "entreprise". Il faut y aller par pétites étapes et l'EvolutionBundle est un outil crée pour l'une de ces bonnes pratiques : **le Continuous Deployment**.
 
 {% endexcerpt %}
 
@@ -73,7 +73,7 @@ DOWN : ALTER TABLE logs DROP COLUMN exported;
 </div>
 
 
-Pour terminer, je dirais que le bundle est stable et utilisable mais il continuera d'évoluer pour s'adapter au problèmes rencontrées. Pour information, il est utilisé en production sur 4 applications chez un acteur de la grande distribution. Le bundle est sur [Github][evolutionbundle-github] et [packagist][evolutionbundle-packagist]!
+Pour terminer, je dirais que le bundle est stable et utilisable mais il continuera d'évoluer pour s'adapter au problèmes rencontrées. Pour information, il est utilisé en production sur 4 applications chez un acteur de la grande distribution. Le bundle est sur [Github][evolutionbundle-github] et [packagist][evolutionbundle-packagist].
 
 
 [evolutionbundle-github]: https://github.com/lilweb/EvolutionBundle

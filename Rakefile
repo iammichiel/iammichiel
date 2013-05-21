@@ -19,7 +19,7 @@ end
 # ~~~
 desc "Build site using Jekyll"
 task :build do
-  jekyll
+  jekyll "build"
 end
 
 # Deploys blogs online
