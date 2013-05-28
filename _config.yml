@@ -2,7 +2,7 @@
 # ~~~
 
 # On ne compile pas le dossier less
-exclude: less, Rakefile
+exclude: [less, Rakefile]
 
 pygments: true
 paginate: 5
