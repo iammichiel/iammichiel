@@ -26,5 +26,5 @@ end
 # ~~~
 desc "Deploy blog on server."
 task :deploy => ["build"] do
-	sh "rsync -rv --delete _site/ anivia:/var/www/iammichiel"
+	sh "rsync -rv --delete _site/ localhost:/var/www/iammichiel"
 end
