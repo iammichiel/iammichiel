@@ -2,6 +2,7 @@
 layout: post
 category: article 
 title: Oracle et Symfony2, cauchemar en cuisine
+comments: true
 ---
 
 # Oracle et Symfony2, cauchemar en cuisine
@@ -45,9 +46,12 @@ Maintenant, faites vous des copains chez les Chef de projets, expliquez leur pou
 
 # Performance ou bonnes pratiques?
 
-Et dernier point que je voudrais aborder, (j'en passe et j'en passe) viendra un moment ou il vous faudra choisir : Soit respecter vos convictions, vos croyances de développeurs inculqués à coup de "RTFM" ou "noob" sur les forums, martelés pendant les code-review par vos pairs ou encore preché par un "evangelist" pendant une conférence soit accepter la réalité du monde du travail et coder "salement". J'ai sous mes yeux une pull-request où se pose cette question : la performance ou les best-practices ?
+Et dernier point que je voudrais aborder, (j'en passe et j'en passe) viendra un moment ou il vous faudra choisir : 
 
-Un cas tordu, une situation particulière, me direz-vous? Mais non, une situation basique, un besoin basique et une performance x15 entre les deux implémentations.
+- Soit respecter vos convictions, vos croyances de développeurs inculqués à coup de "RTFM" ou "noob" sur les forums, martelés pendant les code-review par vos pairs ou encore preché par un "evangelist" pendant une conférence. 
+- Soit accepter la réalité du monde du travail et coder "salement". 
+
+J'ai sous mes yeux une pull-request où se pose cette question : la performance ou les best-practices? Un cas tordu, une situation particulière, me direz-vous? Mais non, une situation basique, un besoin basique et une performance x15 entre les deux implémentations.
 
 ### Voici la version propre (simplifié) : 
 
@@ -64,7 +68,7 @@ return $stmt->fetchAll(Query::HYDRATE_SINGLE_SCALAR);
 {% endhighlight %}
 </div>
 
-Avec cette version propre, dans un premier temps, on prépare une requête SQL, puis, on bind les variables pour la conversion du format, l'échappement, injection SQL et autres modifications. Le temps d'exécution de cette requete : **140 secondes**. 
+Avec cette version propre, dans un premier temps, on prépare une requête SQL, puis on bind les variables pour la conversion du format (par exemple pour les dates), l'échappement contre les injections SQL et autres modifications. Le temps d'exécution de cette requete : **140 secondes**. 
 
 ### La version "sale" :
 
