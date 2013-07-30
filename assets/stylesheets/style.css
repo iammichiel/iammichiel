@@ -58,6 +58,8 @@ html {
   /* 1 */
 
   -webkit-text-size-adjust: 100%;
+  /* 2 */
+
   -ms-text-size-adjust: 100%;
   /* 2 */
 
@@ -330,6 +332,8 @@ textarea {
   /* 2 */
 
   vertical-align: baseline;
+  /* 3 */
+
   *vertical-align: middle;
   /* 3 */
 
@@ -387,6 +391,8 @@ input[type="radio"] {
   /* 2 */
 
   *height: 13px;
+  /* 3 */
+
   *width: 13px;
   /* 3 */
 
@@ -732,6 +738,8 @@ body h2 {
 }
 body span.syntax {
   padding: 4px;
+  font-family: monospace, serif;
+  font-size: 1em;
 }
 body div.syntax,
 body span.syntax {
@@ -795,6 +803,14 @@ header nav a:hover {
 #main article summary div.year {
   font-size: 1em;
 }
+#main article h1 a,
+#main article h2 a {
+  color: #616161;
+}
+#main article h1 a:hover,
+#main article h2 a:hover {
+  text-decoration: none;
+}
 #main article section {
   width: 700px;
   float: left;
@@ -823,4 +839,7 @@ footer {
   padding-bottom: 20px;
   margin-left: 60px;
   width: 700px;
+}
+#disqus_thread {
+  width: 100%;
 }

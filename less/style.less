@@ -68,6 +68,8 @@ body {
 
     span.syntax {
         padding: 4px;
+        font-family: monospace, serif;
+		font-size: 1em;
     }
 
 	div.syntax, span.syntax {
@@ -132,6 +134,16 @@ header {
 			}
 		}
 
+		// Usefull for in-article anchors
+		h1, h2 {
+			a { 
+				color: #616161;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+
 		section {
 			width: 700px;
 			float: left;
@@ -174,6 +186,6 @@ footer {
 }
 
 #disqus_thread {
-	.clear: both;
+	//.clear: both;
 	width: 100%;
 }
