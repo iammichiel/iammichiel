@@ -10,15 +10,21 @@ end
 # Default task : start jekyll locally.
 # ~~~
 desc "Serve on Localhost with port 4000"
-task :default do
+task :default => ["less"] do
   jekyll "serve --watch"
 end
 
+# Compile les fichiers less
+# ~~~
+desc "Compile the less files"
+task :less do 
+	sh "lessc less/style.less > assets/stylesheets/style.css"
+end
 
 # Builds a new version of the site
 # ~~~
 desc "Build site using Jekyll"
-task :build do
+task :build => ["less"] do
   jekyll "build"
 end
 
@@ -26,5 +32,5 @@ end
 # ~~~
 desc "Deploy blog on server."
 task :deploy => ["build"] do
-	sh "rsync -rv --delete _site/ localhost:/var/www/iammichiel"
+	sh "rsync -rv --delete _site/ green:/var/www/iammichiel"
 end
