@@ -5,4 +5,3 @@
 exclude: [less, Rakefile]
 
 pygments: true
-paginate: 5
