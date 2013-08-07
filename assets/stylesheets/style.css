@@ -803,6 +803,14 @@ header nav a:hover {
 #main article summary div.year {
   font-size: 1em;
 }
+#main article blockquote {
+  margin: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-left: 10px solid gray;
+}
 #main article h1 a,
 #main article h2 a {
   color: #616161;
