@@ -35,7 +35,7 @@ Actually, there is no surprise. It is way faster to insert all things and just c
 
 ## Why ? 
 
-When first checking if the string is present, you perform twice as much SQL queries as for the second solution. **And IO is expensive**. Point.
+When first checking if the string is present, you perform twice as much SQL queries as for the second solution. **And IO is expensive**. Period.
 
 [repo-github]: https://github.com/iammichiel/mysql-insert-test
 [slick-typesafe]: http://slick.typesafe.com/
