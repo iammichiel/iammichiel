@@ -13,7 +13,7 @@ Currently, I am working on a heavy read/write database application in Play (teas
 
 {% endexcerpt %}
 
-> As [@antoineguiral][antoine-twitter] pointed out on twitter, there is a MySQL specific command INSERT IGNORE that can around handy in this situation. I have decided to add that solution to the application and added the results below. Thanks Antoine! ;)
+> As [@antoineguiral][antoine-twitter] pointed out on twitter, there is a MySQL specific command INSERT IGNORE that fits the situation. I have decided to add that solution to the application and added the results below. Thanks Antoine! ;)
 
 ## Solutions 
 
@@ -32,7 +32,7 @@ These three solutions are present in my testing app, [published on Github][repo-
 
 ## Results
 
-Actually, there is no surprise. It is way faster to insert all things and just catch the unique violation exception. The only surprise is in how much faster. I have tried this a dozen of times and the "with-read" solution sometimes went above 10 seconds while the other solutions never took longer than 2 seconds. And generally the lasts solutions are about 2 or 3 times faster. But since all you want is numbers here they are :
+Actually, there is no surprise. It is way faster to insert all things and just catch the unique violation exception. The only surprise is in how much faster. I have tried this a dozen of times and the "with-read" solution sometimes went above 10 seconds while the other solutions never took longer than 2 seconds. And they are generally about 2 or 3 times faster. But since all you want is numbers here they are :
 
 - **With** : 1848 ms
 - **Without** : 689 ms
