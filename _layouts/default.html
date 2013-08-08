@@ -4,54 +4,54 @@
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title>{{page.title}} - i.am.michiel</title>
+    <title>{{page.title}} - i.am.michiel</title>
 
-	<meta name="author" content="Michiel Missotten">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<meta name="description" content="Mon blog sur le développement web. Des articles sur le html/css, Php avec Symfony mais aussi du Scala avec Play!" />
+    <meta name="author" content="Michiel Missotten">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Mon blog sur le développement web. Des articles sur le html/css, Php avec Symfony mais aussi du Scala avec Play!" />
     <meta name="google-site-verification" content="7Qimw_EZyPoeltAf3ax47HkSXFKBJ1-aIK4cZtg_3js" />
 
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="/assets/stylesheets/style.css">
     <link rel="icon" type="image/png" href="/assets/favicon.png">
 
-	<script src="/assets/javascripts/modernizr-2.5.3.js"></script>
+    <script src="/assets/javascripts/modernizr-2.5.3.js"></script>
 </head>
 
 <body>
-	<header>
-		<nav>
-			<a {% if page.group == "home" %} class="active" {% endif %} href="/">Home</a>
-	    	<a {% if page.group == "articles" %}class="active"{% endif %} href="/articles.html">Articles</a>
-			<a {% if page.group == "about" %}class="active"{% endif %} href="/about.html">About me</a>
-		</nav>
-	</header>
-	
+    <header>
+        <nav>
+            <a {% if page.group == "home" %} class="active" {% endif %} href="/">Home</a>
+            <a {% if page.group == "articles" %}class="active"{% endif %} href="/articles.html">Articles</a>
+            <a {% if page.group == "about" %}class="active"{% endif %} href="/about.html">About me</a>
+        </nav>
+    </header>
+  
     <section id="main">
-		{{content}}
-  	</section>
+        {{content}}
+    </section>
 
-  	<footer>i.am.michiel - Copyright 2012</footer>
+    <footer>i.am.michiel - Copyright 2012</footer>
 
     <script type="text/javascript">
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-17860828-5']);
-          _gaq.push(['_trackPageview']);
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-17860828-5']);
+        _gaq.push(['_trackPageview']);
 
-          (function() {
+        (function() {
             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
+        })();
     </script>
 
-	<!--[if lt IE 7 ]>
-  	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-  	<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-	<![endif]-->
+  <!--[if lt IE 7 ]>
+      <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+      <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
   
 </body>
 </html>
