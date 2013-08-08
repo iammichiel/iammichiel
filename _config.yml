@@ -5,3 +5,4 @@
 exclude: [less, Rakefile]
 
 pygments: true
+excerpt_separator: "thisshouldnotoccurinanypost"
