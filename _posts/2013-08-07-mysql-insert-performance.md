@@ -19,7 +19,7 @@ Currently, I am working on a heavy read/write database application in Play (teas
 
 First of all, let's define the problem technically : I have data I want to insert into a table. That table has a unique constraint on one of the fields. If the string is already present, do nothing, else insert the string into the table. 
 
-1. The most obvious solution would be to check if the string is already present by performing a <span class="syntax">select count(*)</span> query. If that returns 0, insert the data. 
+1. The most obvious solution would be to check if the string is already present by performing a <span class="syntax">select count(\*)</span> query. If that returns 0, insert the data. 
 2. The second solution is to delegate the unique check to the database. Just insert the data and check if an exception is thrown for a "**unicity violation**".
 3. The last possibility is to use a MySQL specificity : [INSERT IGNORE][mysql-insert-ignore]. If the key is not found in the table, it will perform an insert otherwise, well, it simply ignores. As Slick isn't able to do this using functions or methods, it will be done in raw SQL. 
 
