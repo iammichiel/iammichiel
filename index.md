@@ -15,7 +15,7 @@ group: home
     <section>
 		<h1>{{ post.title }}</h1>
 		{{ post.excerpt | markdownify }}
-		<a class="readMore" href="{{ post.url }}">lire la suite...</a>
+		<a class="readMore" href="{{ post.url }}">read more...</a>
 	</section>
 </article>
 
