@@ -17,7 +17,7 @@ end
 # Compile les fichiers less
 # ~~~
 desc "Compile the less files"
-task :less do 
+task :less do
 	sh "lessc less/style.less > assets/stylesheets/style.css"
 end
 

@@ -1,8 +1,8 @@
-# Configuration. 
+# Configuration.
 # ~~~
 
 # On ne compile pas le dossier less
 exclude: [less, Rakefile]
 
-pygments: true
+highlighter: true
 excerpt_separator: "thisshouldnotoccurinanypost"
